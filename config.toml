@@ -1,0 +1,39 @@
+baseurl = "https://openius.github.io"
+languageCode = "en-us"
+title = "OpenIus"
+theme = "openius-hugo-theme"
+googleAnalytics = ""
+disqusShortname = ""
+
+[permalinks]
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+
+[[menu.main]]
+    name = "LexDown"
+    url = "/lexdown/"
+
+[[menu.main]]
+    name = "GitHub"
+    url = "https://www.github.com/openius"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://www.twitter.com/open_ius"
+
+[params]
+    github_project_name = "openius"
+    github_user_name = "openius"
+    description = "Open Source Legal Stuff"
+    [params.logo]
+        url = "openius-logo-circle.png"
+        width = 50
+        height = 50
+        alt = "OpenIus"
