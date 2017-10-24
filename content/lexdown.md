@@ -1,5 +1,7 @@
 ---
-title: "Blog"
-date: 2017-10-11T20:56:52+02:00
-draft: true
+date: 2017-05-05T21:49:57-07:00
+title: "Lexdown"
 ---
+
+# What is LexDown?
+Lexdown is a [markup language](./specs) for legal documents.

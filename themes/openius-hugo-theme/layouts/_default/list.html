@@ -3,7 +3,7 @@
 <main class="content" role="main">
 
   <div class="archive">
-    {{ range (where .Data.Pages "Type" "blog").GroupByDate "2006" }}
+    {{ range (where .Site.Pages "Section" "blog").GroupByDate "2006" }}
     <h2 class="archive-title">{{ .Key }}</h2>
     {{ range .Pages }}
     <article class="archive-item">
@@ -14,6 +14,18 @@
     </article>
     {{ end }}
     {{ end }}
+    
+    {{ if eq .Section "blog" }}
+      <span class="article-content">{{ .Content }} </span>
+    {{ end }}
+    
+    <!-- {{ if neq .Section "blog" }}
+    <article class="article">
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+    </article>
+    {{ end }} -->
   </div>
 
 </main>
