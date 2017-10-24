@@ -1,4 +1,4 @@
-baseurl = "https://openius.github.io"
+baseurl = "http://185.101.159.160/"
 languageCode = "en-us"
 title = "OpenIus"
 theme = "openius-hugo-theme"
