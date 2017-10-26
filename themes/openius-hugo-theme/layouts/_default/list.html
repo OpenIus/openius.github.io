@@ -5,7 +5,8 @@
   <div class="archive">
     {{ range (where .Site.Pages "Section" "blog").GroupByDate "2006" }}
     <h2 class="archive-title">{{ .Key }}</h2>
-    {{ range .Pages }}
+    {{ range (where .Site.Pages "Section" "blog") }}
+    {{ if .Type eq "post"}}
     <article class="archive-item">
       <a href="{{ .Permalink }}" class="archive-item-link">{{ .Title }}</a>
       <span class="archive-item-date">
@@ -15,9 +16,7 @@
     {{ end }}
     {{ end }}
     
-    {{ if eq .Section "blog" }}
       <span class="article-content">{{ .Content }} </span>
-    {{ end }}
   </div>
 
 </main>

@@ -1,4 +1,4 @@
-<section id="services">
+<section id="main">
 
 <!-- Page Content -->
  {{ range $index, $element :=  where .Site.Pages "Section" "main" }}
@@ -14,8 +14,11 @@
                 <div>
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
+                    <!-- TODO(nidegen) this if should not be there, but an empty element with Title 'Mains' strangely appears -->
+                    {{ if .Content }}
                     <h2 class="section-heading">{{ .Title }}</h2>
                     {{ .Content }}
+                    {{ end }}
                 </div>
             </div>
 
