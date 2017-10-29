@@ -1,7 +1,19 @@
 ---
 date: 2017-05-05T21:49:57-07:00
-title: "Lexdown"
+title: "LexDown"
 ---
 
-# What is LexDown?
-Lexdown is a [markup language](./specs) for legal documents.
+
+LexDown is designed as a superset of [Markdown](https://en.wikipedia.org/wiki/Markdown) that supports additional features specifically for legal documents.
+
+
+## Document formatting styles
+Currently, LexDown covers three different document styles:
+
+* Contract
+* Coded Law
+* Ruling
+
+## LexDown specific Features 
+ 
+* Hyperlinks `[Name](<url>)` 
