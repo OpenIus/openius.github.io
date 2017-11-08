@@ -1,0 +1,69 @@
+baseurl = "http://185.101.159.160/"
+languageCode = "en-us"
+title = "OpenIus"
+theme = "openius-hugo-theme"
+googleAnalytics = ""
+disqusShortname = ""
+enableMissingTranslationPlaceholders = true
+
+[permalinks]
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    
+[[menu.main]]
+    name = "Links"
+    url = "/links/"
+
+[[menu.main]]
+    name = "LexDown"
+    url = "/lexdown/"
+
+[[menu.main]]
+    name = "GitHub"
+    url = "https://www.github.com/openius"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://www.twitter.com/open_ius"
+
+[params]
+  github_project_name = "openius"
+  github_user_name = "openius"
+  description = "Open Source Legal Stuff"
+  [params.logo]
+    url = "openius-logo-circle.png"
+    width = 50
+    height = 50
+    alt = "OpenIus"
+
+# Multi language parameters
+DefaultContentLanguage = "en"
+testParam = "This is testParam in en"
+
+[Languages]
+  [Languages.en]
+    title = "OpenIus"
+    weight = 1
+    [Languages.en.params]
+      linkedin = "english-link"
+
+  [Languages.fr]
+    testParam = "Ceci est testParam en fr"
+    title = "OpenIus"
+    weight = 3
+    [Languages.fr.params]
+      description = "Open Source en matière juristique"
+
+  [Languages.de]
+    testParam = "Dies ist testParam in de"
+    title = "OpenIus"
+    weight = 2
+    [Languages.de.params]
+      description = "Open Source für juristische Angelegenheiten.."
